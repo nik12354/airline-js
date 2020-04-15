@@ -1,4 +1,4 @@
-const BL_URL = '/api/';
+const BL_URL = 'https://airline-back.herokuapp.com/api/';
 
 export default {
     register: (username, password) => {
