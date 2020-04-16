@@ -25,11 +25,7 @@ class App extends Component {
         this.state.isOpenModal = false;
         this.state.isAuthorized = false;
     }
-
-    // getIsAuthorized() {
-    //     return !!Cookies.get('sid');
-    // }
-
+    
     authChangeHandler = () => {
         if (this.state.isAuthorized === true)
             this.setState({ isAuthorized: false });

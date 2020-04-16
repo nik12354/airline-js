@@ -43,7 +43,7 @@ class MessageList extends Component {
         }
     }
 
-        componentDidUpdate(prevProps) {
+    componentDidUpdate(prevProps) {
         if (this.props.addedMessage && !prevProps.addedMessage) {
             this.reloadMessages();
         }

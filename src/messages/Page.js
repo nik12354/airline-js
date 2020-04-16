@@ -4,35 +4,13 @@ import Messages from '../api/Messages';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class MessagesPage extends Component {
-    // state = {};
-
-    // constructor(props) {
-    //     super(props);
-
-    //     this.state.messages = [];
-    // }
-
-
-
-    // componentDidMount() {
-    //     if (this.props.isAuthorized) {
-    //         this.reloadMessages();
-    //     }
-    // }
-
-    // componentDidUpdate(prevProps) {
-    //     if (this.props.addedMessage && !prevProps.addedMessage) {
-    //         this.reloadMessages();
-    //     }
-    // }
-
     render() {
         let pageContent;
 
         if (this.props.isAuthorized) {
             pageContent = (
                 <div>
-                    <MessageList username={this.props.username} isAuthorized={this.props.isAuthorized} />
+                    <MessageList addedMessage={this.props.addedMessage} username={this.props.username} isAuthorized={this.props.isAuthorized} />
                 </div>
             );
         } else {

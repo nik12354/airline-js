@@ -24,7 +24,6 @@ class AuthPage extends Component {
                 });
                 console.log(res)
                 console.log(this.state.authLogin)
-                // this.props.changeUsername(this.state.authLogin);
                 this.props.authChangeHandler();
                 // setTimeout(function(){
                 //     document.location.href = '/';
