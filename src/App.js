@@ -48,7 +48,7 @@ class App extends Component {
     addMessageHandler = (text) => {
         let id;
         Messages.getAll().then(data => {
-                id = Math.random() * (1000000 - 100) + 100;
+                id = Math.floor(Math.random() * (1000000 - 100)) + 100;
                 return Messages.add(text, this.state.username, id)
             }).then(() => {
                 if (this.state.addedMessage === true)
